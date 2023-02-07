@@ -280,6 +280,12 @@ footer{
     color: white;
 }
 
+#specs table {
+    font-size: 16rem;
+ }
+ .advantage-text {
+    font-size: 14rem;
+ }
 @media only screen and (max-width: 768px) {
     :root{
         font-size: 0.8pt;
