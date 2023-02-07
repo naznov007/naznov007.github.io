@@ -1,0 +1,351 @@
+* {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+:root{
+    font-size: 1pt;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    overflow-x: hidden;
+
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #ffa620;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24rem;
+    color: black;
+    z-index: 10;
+
+    position:fixed;
+    top: 0px;
+    left: 0px;
+}
+#header-tel{
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+#header-tel img{
+    height: 30px;
+}
+header a {
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+}
+header a:hover{
+    color: white;
+}
+
+
+#p1 {
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    
+}
+#p1-bg{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: -1;
+    background-image: url("static/images/invertor-bg-w.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+#p1-text {
+    font-size: 36rem;
+    font-family: 'Play', sans-serif;
+}
+
+#p1>div#learn-more-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#p1 button {
+    padding: 30px 80px;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 33px 129px;
+    gap: 8px;
+    background: #2B2E4A;
+    border-radius: 999px;
+    font-size: 14rem;
+}
+#p1 button:hover{
+    background-color: #3d4056;
+}
+
+#p2{
+    height: 100vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+
+    scroll-margin: 80px;
+}
+#infographic-message {
+    width: 80%;
+    font-size: 24rem;
+}
+#infographic {
+    z-index: -1;
+    background-image: url("static/images/pic1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 80%;
+}
+#infographic-complementary {
+
+}
+
+#p3{
+    background-color:#ffbd5b;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+#advantages-header {
+    display: flex;
+    justify-content: center;
+    font-size: 24rem;
+    margin-bottom: 35px;
+
+}
+#advantages-container{
+    display: flex;
+    justify-content:center;
+}
+.advantage {
+    z-index: 5;
+    width: 250px;
+    height: auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 100px 100px auto;
+    background-color: white;
+    /* border: 1px solid #2B2E4A; */
+    margin: 10px;
+    border-radius: 30px;
+    padding: 10px;
+
+    animation-name: advantage-card-mouseleave;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.advantage:hover{
+    animation-name: advantage-card-hover;
+}
+@keyframes advantage-card-hover {
+    from {
+        transform: scale(1);
+        box-shadow: 0px 0px 1px black;
+    }
+    to {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px black;
+
+    }  
+}
+@keyframes advantage-card-mouseleave {
+    from {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px black;
+
+    }
+    to {
+        transform: scale(1);
+        box-shadow: 0px 0px 1px black;
+
+    }
+    
+}
+
+.advantage-image{height:100%;justify-self: center;margin-top: 10px;}
+.advantage-image>img{height: 100%;}
+
+/* .advantage>div{margin:5px} */
+.advantage-header {
+    font-size: 18rem;
+    text-align: center;
+    margin: 5px;
+    align-self: center
+}
+.advantage-text{margin: 10px;}
+
+#p4{ 
+}
+#specs-header {
+    text-align: center;
+    font-size: 24rem;
+    margin: 10px 0;
+}
+#specs-container {
+    display: flex;
+    justify-content: center;
+}
+#specs>table {
+    border-spacing: 30px 10px;
+    border-collapse: separate;
+}
+#specs td {column-gap: 20px;}
+
+#p5 {
+    background-color:#ffbd5b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 0px 10px;
+}
+#contact-form-header{
+    font-size: 24rem;
+}
+#contact-form-callback {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#contact-form-callback>* {
+padding: 20px;
+}
+#contact-form-callback>input {
+    padding: 0 30px;
+    font-size: 18rem;
+}
+#contact-form-callback>button:hover{
+    background-color:#ffa620
+}
+
+footer{
+    background-color:#ffbd5b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+    font-size: 20rem;
+}
+#footer-working-hours{
+    display: flex;
+    flex-direction: column;
+}
+#footer-contact-number {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+#footer-contact-number>img {
+    height: 30px
+}
+#footer-contact-number>* {
+    margin-left: 5px;
+    cursor:pointer;
+}
+#footer-contact-number a {
+    color: black;
+}
+#footer-contact-number a:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    :root{
+        font-size: 0.8pt;
+    }
+    body>*{
+        
+    }
+    header{
+        position: initial;
+    }
+    #header-tel {
+        display: none;
+    }
+ #p1{
+    width: 95%;;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    padding: 0;
+ }   
+ #p1>*{
+    position: initial
+ }
+ #p1-bg{
+    height: 300px;
+    padding-top: 100px;
+ }
+ #p1-text{
+    font-size: 26rem;
+ }
+ #advantages-container {
+    flex-wrap: wrap;
+ }
+ .advantage-header{
+    font-size: 22rem;
+ }
+ .advantage-text {
+    font-size: 18rem;
+ }
+ .advantage{animation: none;}
+ .advantage:hover{
+    animation: none;
+ }
+ #p2{
+    height: unset;
+ }
+ #infographic{
+    height: 300px;
+ }
+ #infographic-complementary {
+    font-size: 12rem;
+ }
+ #p4 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+ }
+ #specs table {
+    font-size: 18rem;
+ }
+ footer #footer-working-hours {
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+ footer #footer-contact-number{
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+}
